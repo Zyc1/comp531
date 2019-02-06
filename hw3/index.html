@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Breakout</title>
+
+ 	<meta charset="utf-8">
+ 	<meta name="author" content="Yichen Zhang">
+
+ 	<script src="index.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="index.css">
+ </head>
+ <body>
+ 	<div class = "container" align="center" style="height: 700px">
+ 	<table style="border: 1px solid white" cellspacing="15px">
+ 		<tr>
+ 			<td><canvas width="1000" height="700"></canvas></td>
+ 			<td>
+ 				<div class="tips">
+ 					<h2>Tips:</h2>
+ 					<p>Keep your mouse in the playing field and move left or right to control the paddle</p>
+ 					<p>Click the left mouse button in the playing field to start the game</p>
+ 					<p>Don't click the left mouse button during the game!</p>
+					<p>To restart the game, click the "restart" button</p>
+ 					<select id="level">
+ 						<option selected="selected">Easy</option>
+ 						<option>Medium</option>
+ 						<option>Hard</option>
+ 					</select>
+ 					<h2>Combo:<span style="font-size: 20px" id="combo">0</span></h2>
+ 					<h2>Score:<span style="font-size: 20px" id="score">0</span></h2>
+ 					<p>
+	 					<b>Max Combo:<span id="maxCombo">0</span></b>
+	 					<b>Best Score:<span id="bestScore">0</span></b>
+	 				</p>
+ 					<button onclick="restart()">Restart</button>
+ 				</div>
+ 			</td>
+ 		</tr>
+ 	</table>
+ </div>
+ 	
+ </body>
+ </html>

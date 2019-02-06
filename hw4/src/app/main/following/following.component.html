@@ -1,0 +1,29 @@
+<div class="row" *ngFor="let follower of followers">
+  <div class="ui cards">
+    <div class="ui fluid card">
+      <div class="content">
+        <img class="right floated mini ui image" src="{{follower.avatar}}">
+        <div class="header">
+          {{follower.name}}
+        </div>
+        <div class="description">
+          {{follower.headline}}
+        </div>
+      </div>
+      <div class="extra content">
+        <button class="ui button" (click)="unFollow(follower.name)">
+          <i class="user icon"></i>
+          UnFollow
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<div class="ui fluid input">
+  <input type="text" placeholder="User" id="addUserName">
+  <button class="ui basic button" id="add" (click)="addFollower()">
+    <i class="icon user"></i>
+    Add
+  </button>
+</div>

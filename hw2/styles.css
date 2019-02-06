@@ -1,0 +1,151 @@
+body{
+	background-image: url('https://fakeimg.pl/static/images/dark_wall.png');
+	background-size: cover;
+}
+
+/*.list{
+	margin-right: 100px
+}*/
+
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 10%;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	background-color: rgb(40,40,40);
+}
+
+/*li{
+	float: right;
+}
+
+*/
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 30px 0px;
+	font-size: 21px;
+}
+
+li a:hover{
+	background-color: rgb(51,51,51);
+	color: #ffa273;
+}
+
+.main-content{
+	width: 90%;
+}
+
+/*#td1{
+	margin：0 auto;
+}*/
+
+.posts{
+	border: 7px solid white;
+	border-collapse: separate; 
+	border-spacing: 25px; 
+	width: 90%;
+	color: white;
+	table-layout: fixed;
+	margin-left: 15%;
+	font-family: cursive;
+	border-style: double;
+}
+
+.posts td{
+	border: 2px solid white;
+	border-style: dashed;
+	padding: 10px;
+}
+input[type="button"]{
+	width: 80px;
+	margin-top: 5px;
+	background-color: #fcd3a5;
+	border: none;
+	padding: 6px, 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: serif;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+input[type="button"]:hover{
+	background-color: #ffa273;
+}
+
+.profile{
+	border: 7px solid white;
+	border-collapse: separate; 
+	border-spacing: 25px; 
+	width: 75%;
+	color: white;
+	margin-left: 20%;
+	font-family: serif;
+	border-style: double;
+}
+
+.profile td{
+	border: 2px solid white;
+	border-style: dashed;
+	padding: 10px;
+}
+input[type="text"]{
+	background: transparent;
+	margin-left: 10px;
+	color: white;
+}
+input[type="tel"]{
+	background: transparent;
+	margin-left: 10px;
+	color: white;
+}
+input[type="Email"]{
+	background: transparent;
+	margin-left: 10px;
+	color: white;
+}
+input[type="password"]{
+	background: transparent;
+	margin-left: 10px;
+	color: white;
+}
+#nameMsg{
+	color: #fcd3a5;
+	font-size: 12px;
+	border: 0px;
+}
+#emailMsg{
+	color: #fcd3a5;
+	font-size: 12px;
+	border: 0px;
+}
+#telMsg{
+	color: #fcd3a5;
+	font-size: 12px;
+	border: 0px;
+}
+#zipMsg{
+	color: #fcd3a5;
+	font-size: 12px;
+	border: 0px;
+}
+#passwordMsg{
+	color: #fcd3a5;
+	font-size: 12px;
+	border: 0px;
+}
+#confirmMsg{
+	color: #fcd3a5;
+	font-size: 12px;
+	border: 0px;
+}

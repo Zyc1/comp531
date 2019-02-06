@@ -1,0 +1,15 @@
+<div class="ui fluid card" *ngFor="let user of loginUser">
+  <div class="image">
+    <img class="ui fluid image" src="{{user.avatar}}">
+  </div>
+  <div class="content">
+    <h1 class="header">{{user.name}}</h1>
+    <div class="description">{{headline}}</div>
+  </div>
+  <div class="extra content">
+    <div class="ui fluid input">
+      <input type="text" placeholder="New Status" [(ngModel)]="newStatus">
+      <button class="ui button" (click)="updateStatus()"><i class="upload icon"></i></button>
+    </div>
+  </div>
+</div>

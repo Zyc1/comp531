@@ -1,0 +1,68 @@
+<div class="wrapper">
+  <div class="title">
+    Registration
+  </div>
+  <br>
+  <form class="ui form segment" id="registerForm">
+    <div class="two fields">
+      <div class="required field">
+        <label>Account Name</label>
+        <input id="accountName" placeholder="Account Name" name="accountName" type="text" pattern="^[A-Za-z][A-Za-z0-9]*$" required>
+      </div>
+      <div class="field">
+        <label>Display Name</label>
+        <input name="displayName" type="text" placeholder="optional">
+      </div>
+    </div>
+    <div class="required field">
+      <label>Email Address</label>
+      <input id="email" placeholder="Email" name="email" type="email" required>
+    </div>
+    <div class="required field">
+      <label>Phone Number</label>
+      <input id="phone" placeholder="123-123-1234" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </div>
+    <div class="required field">
+      <label>Birth Date</label>
+      <input id="birthdate" name="birthday" type="date" required>
+    </div>
+    <div class="required field">
+      <label>Zip Code</label>
+      <input id="zipcode" type="text" name="zipcode" pattern="[1-9]{1}[0-9]{4}" required>
+    </div>
+    <div class="two fields">
+      <div class="required field">
+        <label>Password</label>
+        <input id="password" name="password" type="password" required>
+      </div>
+      <div class="required field">
+        <label>Confirm Password</label>
+        <input id="confirmation" name="confirmPassword" type="password" required>
+      </div>
+    </div>
+    <button id="register" class="ui teal submit button" (click)="onSubmit()">Submit</button>
+    <button class="ui reset button" (click)="reset()">Reset</button>
+  </form>
+  <div class="ui warning message" id="alert" style="display: none;">
+    <i class="close icon"></i>
+    <div class="header">
+      Not allowed to register!
+    </div>
+    Only individuals 18 years of age or older are allowed to register.
+  </div>
+  <div class="ui success message" id="registerSuccess" style="display: none;">
+    <i class="close icon"></i>
+    <div class="header">
+      Success!
+    </div>
+    You have registered and allowed to log in.
+  </div>
+  <div class="ui error message" style="visibility: hidden" id="message">
+    <i class="close icon"></i>
+    <div class="header">
+      There were some errors with your submission
+    </div>
+    <ul class="list" id="msg">
+    </ul>
+  </div>
+</div>

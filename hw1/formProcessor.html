@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Processor</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Yichen Zhang">
+
+	<style type="text/css">
+		th{
+			height: 50px;
+			font-family: sans-serif;
+		}
+		td{
+			height: 50px;
+			text-align: center;
+		}
+	</style>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var table = document.getElementById("RegistrationTab");
+			var KV = window.location.search.substring(1).split("&");
+			for(var i=0; i<KV.length; i++){
+				var tr = document.createElement("tr");
+				var key = document.createElement("td");
+				var val = document.createElement("td");
+				key.innerHTML = KV[i].split("=")[0];
+				var valInner = KV[i].split("=")[1];
+				if(key.innerHTML == "email")
+					valInner = decodeURIComponent(valInner);
+				if(key.innerHTML == "timestamp")
+					valInner = new Date(Number(valInner));
+				val.innerHTML = valInner;
+				tr.appendChild(key);
+				tr.appendChild(val);
+				table.appendChild(tr);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div align="center">
+		<h1>Registration Form</h1>
+		<table id="RegistrationTab" border="1" style="border-collapse: collapse;">
+			<th>Key</th>
+			<th>Value</th>
+		</table>
+	</div>
+</body>
+</html>

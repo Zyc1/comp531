@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Kristy",
+    "password": "yz141",
+    "headline": "Kristy is an art director living in New York",
+    "avatar": "../../images/kristy.png",
+    "email": "yz141@rice.edu",
+    "tel": "111-111-1111",
+    "birthday": "11-08-1992",
+    "zipcode": "77005"
+  },
+  {
+    "name": "Matthew",
+    "password": "12345",
+    "headline": "Matthew is an interior designer living in New York",
+    "avatar": "../../images/matthew.png",
+    "email": "mh12@rice.edu",
+    "tel": "222-222-2222",
+    "birthday": "12-18-1988",
+    "zipcode": "77005"
+  },
+  {
+    "name": "Molly",
+    "password": "54321",
+    "headline": "Molly is a personal assistant living in Paris",
+    "avatar": "../../images/molly.png",
+    "email": "m7@rice.edu",
+    "tel": "333-333-3333",
+    "birthday": "03-05-1982",
+    "zipcode": "77005"
+  },
+  {
+    "name": "Elyse",
+    "password": "23456",
+    "headline": "Elyse is a copywriter working in New York",
+    "avatar": "../../images/elyse.png",
+    "email": "el64@rice.edu",
+    "tel": "444-444-4444",
+    "birthday": "04-09-1993",
+    "zipcode": "77005"
+  },
+  {
+    "name": "Jenny",
+    "password": "65432",
+    "headline": "Jenny is a student studying Media Management at the New School",
+    "avatar": "../../images/jenny.jpg",
+    "email": "jy9@rice.edu",
+    "tel": "555-555-5555",
+    "birthday": "06-25-1996",
+    "zipcode": "77005"
+  },
+  {
+    "name": "Stevie",
+    "password": "34567",
+    "headline": "Stevie is a film-maker from New York",
+    "avatar": "../../images/stevie.jpg",
+    "email": "sj86@rice.edu",
+    "tel": "666-666-6666",
+    "birthday": "05-15-1983",
+    "zipcode": "77005"
+  }
+]

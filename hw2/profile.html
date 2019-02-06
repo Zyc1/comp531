@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Yichen Zhang">
+
+	<script src="profile.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+<body>
+	<ul>
+		<div class="list">
+			<li><a href="main.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+		</div>
+	</ul>
+	<div class="main-content">
+	<table class="profile">
+		<tr>
+			<td>Display Name<input type="text" name="dname" id="nameInput"></td>
+			<td id="initName">Yichen Zhang</td>
+			<td id="nameMsg" style="display: none;"></td>
+		</tr>
+
+		<tr>
+			<td>Email Address<input type="Email" name="email" id="emailInput"></td>
+			<td id="initEmail">yz141@rice.edu</td>
+			<td id="emailMsg" style="display: none;"></td>
+		</tr>
+
+		<tr>
+			<td>Phone Number<input type="tel" name="phone" placeholder="123-123-1234" id="telInput"></td>
+			<td id="initTel">111-111-1111</td>
+			<td id="telMsg" style="display: none; color: #fcd3a5"></td>
+		</tr>
+
+		<tr>
+			<td>Zip Code<input type="text" name="zipcode" id="zipInput"></td>
+			<td id="initZip">77005</td>
+			<td id="zipMsg" style="display: none; color: #fcd3a5"></td>
+		</tr>
+
+		<tr>
+			<td>Password<input type="password" name="password" id="passwordInput"></td>
+			<td id="initPassword">zhangyc134</td>
+			<td id="passwordMsg" style="display: none; color: #fcd3a5"></td>
+		</tr>
+
+		<tr>
+			<td>Confirm<input type="password" name="confirmPassword" id="confirmInput"></td>
+			<td id="initConfirm">zhangyc134</td>
+			<td id="confirmMsg" style="display: none; color: #fcd3a5"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" style="border: 0px"><input type="button" value="update" id="updateBtn" onclick="update()"></td>
+		</tr>
+		</table>
+</body>
+</html>

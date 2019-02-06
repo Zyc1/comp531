@@ -1,0 +1,70 @@
+<div class="wrapper">
+  <div class="content">
+    RiceBook
+  </div>
+  <br>
+  <div class="ui placeholder segment" id="auth">
+    <div class="ui two column very relaxed stackable grid">
+      <div class="column">
+        <form class="ui form">
+          <div class="field">
+            <label>Username</label>
+            <div class="ui left icon input">
+              <input type="text" placeholder="Username" id="username" required>
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="ui left icon input">
+              <input type="password" id="password" required>
+              <i class="lock icon"></i>
+            </div>
+          </div>
+          <div class="ui two column grid">
+            <div class="column">
+              <button class="ui teal submit button" id="login" (click)="onSubmit()">Login</button>
+            </div>
+            <div class="column">
+              <button class="ui teal button" id="fbLogin" (click)="fbLogin()">FB Login</button>
+            </div>
+          </div>
+          <!--<button class="ui teal submit button" id="login">Login</button>-->
+          <!--<button class="ui teal button" id="fbLogin" (click)="fbLogin()">Facebook Login</button>-->
+        </form>
+      </div>
+      <div class="middle aligned column">
+        <button class="ui big button" (click)="register()">
+          <i class="signup icon"></i>
+          Sign Up
+        </button>
+      </div>
+    </div>
+    <div class="ui vertical divider">
+      Or
+    </div>
+  </div>
+  <div class="ui error message" id="errMsg" style="display: none;">
+    <i class="close icon"></i>
+    <div class="header">
+      Authentication failed!
+    </div>
+    You must register before you log in.
+  </div>
+  <div class="ui success message" id="successMsg" style="display: none;">
+    <i class="close icon"></i>
+    <div class="header">
+      Success!
+    </div>
+    You have registered and allowed to log in.
+  </div>
+  <div class="ui error message" style="visibility: hidden" id="message">
+    <i class="close icon"></i>
+    <div class="header">
+      There were some errors with your login
+    </div>
+    <ul class="list" id="msg">
+    </ul>
+  </div>
+</div>
+

@@ -1,0 +1,6 @@
+
+{
+  "netid": "yz141",
+  "frontend": "http://hw7frontend.surge.sh",
+  "backend": "https://hw7server.herokuapp.com/"
+}

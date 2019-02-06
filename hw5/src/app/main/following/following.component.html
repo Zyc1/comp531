@@ -1,0 +1,47 @@
+<div class="row" *ngFor="let follower of followers">
+  <div class="ui cards">
+    <div class="ui fluid card">
+      <div class="content">
+        <img class="right floated mini ui image" src="{{follower.avatar}}">
+        <div class="header">
+          {{follower.name}}
+        </div>
+        <div class="description">
+          {{follower.headline}}
+        </div>
+      </div>
+      <div class="extra content">
+        <button class="ui button" (click)="unFollow(follower.name)" id="unfollow">
+          <i class="user icon"></i>
+          UnFollow
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<div class="ui fluid input">
+  <input type="text" placeholder="User" id="addUserName" [(ngModel)]="newFollower">
+  <button class="ui basic button" id="add" (click)="addFollower()">
+    <i class="icon user"></i>
+    Add
+  </button>
+</div>
+<div class="ui error message" style="display: none;" id="errorMsg">
+  <i class="close icon"></i>
+  <div class="header">
+    User not found
+  </div>
+</div>
+<div class="ui warning message" style="display: none;" id="alertMsg">
+  <i class="close icon"></i>
+  <div class="header">
+    Follower already exists
+  </div>
+</div>
+<div class="ui warning message" style="display: none;" id="Msg">
+  <i class="close icon"></i>
+  <div class="header">
+    Please donnot enter your username
+  </div>
+</div>

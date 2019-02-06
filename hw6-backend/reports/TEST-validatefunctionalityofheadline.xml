@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="validate functionality of headline" errors="0" tests="2" failures="0" time="0.497" timestamp="2018-11-11T19:36:47">
+  <testcase classname="validate functionality of headline" name="GET /headlines return array with 1 element containing headline for logged in user" time="0.391"></testcase>
+  <testcase classname="validate functionality of headline" name="PUT /headline update logged in user headline" time="0.106"></testcase>
+</testsuite>
+</testsuites>

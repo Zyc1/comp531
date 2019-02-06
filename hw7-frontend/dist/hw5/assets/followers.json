@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Matthew",
+    "avatar": "../../images/matthew.png",
+    "headline": "Matthew is an interior designer living in New York",
+    "belonging": "Kristy"
+  },
+  {
+    "name": "Molly",
+    "avatar": "../../images/molly.png",
+    "headline": "Molly is a personal assistant living in Paris",
+    "belonging": "Kristy"
+  },
+  {
+    "name": "Elyse",
+    "avatar": "../../images/elyse.png",
+    "headline": "Elyse is a copywriter working in New York",
+    "belonging": "Kristy"
+  },
+  {
+    "name": "Jenny",
+    "avatar": "../../images/jenny.jpg",
+    "headline": "Jenny is a student studying Media Management at the New School",
+    "belonging": "Matthew"
+  },
+  {
+    "name": "Kristy",
+    "avatar": "../../images/kristy.png",
+    "headline": "Kristy is an art director living in New York",
+    "belonging": "Matthew"
+  },
+  {
+    "name": "Molly",
+    "avatar": "../../images/molly.png",
+    "headline": "Molly is a personal assistant living in Paris",
+    "belonging": "Matthew"
+  },
+  {
+    "name": "Matthew",
+    "avatar": "../../images/matthew.png",
+    "headline": "Matthew is an interior designer living in New York",
+    "belonging": "Molly"
+  },
+  {
+    "name": "Jenny",
+    "avatar": "../../images/jenny.jpg",
+    "headline": "Jenny is a student studying Media Management at the New School",
+    "belonging": "Molly"
+  },
+  {
+    "name": "Stevie",
+    "avatar": "../../images/stevie.jpg",
+    "headline": "Stevie is a film-maker from New York",
+    "belonging": "Molly"
+  },
+  {
+    "name": "Matthew",
+    "avatar": "../../images/matthew.png",
+    "headline": "Matthew is an interior designer living in New York",
+    "belonging": "Elyse"
+  },
+  {
+    "name": "Molly",
+    "avatar": "../../images/molly.png",
+    "headline": "Molly is a personal assistant living in Paris",
+    "belonging": "Elyse"
+  },
+  {
+    "name": "Jenny",
+    "avatar": "../../images/jenny.jpg",
+    "headline": "Jenny is a student studying Media Management at the New School",
+    "belonging": "Elyse"
+  },
+  {
+    "name": "Kristy",
+    "avatar": "../../images/kristy.png",
+    "headline": "Kristy is an art director living in New York",
+    "belonging": "Jenny"
+  },
+  {
+    "name": "Elyse",
+    "avatar": "../../images/elyse.png",
+    "headline": "Elyse is a copywriter working in New York",
+    "belonging": "Jenny"
+  },
+  {
+    "name": "Stevie",
+    "avatar": "../../images/stevie.jpg",
+    "headline": "Stevie is a film-maker from New York",
+    "belonging": "Jenny"
+  },
+  {
+    "name": "Kristy",
+    "avatar": "../../images/kristy.png",
+    "headline": "Kristy is an art director living in New York",
+    "belonging": "Stevie"
+  },
+  {
+    "name": "Elyse",
+    "avatar": "../../images/elyse.png",
+    "headline": "Elyse is a copywriter working in New York",
+    "belonging": "Stevie"
+  },
+  {
+    "name": "Matthew",
+    "avatar": "../../images/matthew.png",
+    "headline": "Matthew is an interior designer living in New York",
+    "belonging": "Stevie"
+  }
+]

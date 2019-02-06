@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="validate functionality of articles" errors="0" tests="4" failures="0" time="0.79" timestamp="2018-11-11T19:36:46">
+  <testcase classname="validate functionality of articles" name="GET /articles/id where id is valid" time="0.126"></testcase>
+  <testcase classname="validate functionality of articles" name="GET /articles/id where id is a invalid" time="0.104"></testcase>
+  <testcase classname="validate functionality of articles" name="should return all feeds of logged in user" time="0.164"></testcase>
+  <testcase classname="validate functionality of articles" name="POST /article (adding an article for logged in user returns list of articles with new article, validate list increased by one and contents of the new article)" time="0.395"></testcase>
+</testsuite>
+</testsuites>

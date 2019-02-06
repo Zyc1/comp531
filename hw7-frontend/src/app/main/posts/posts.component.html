@@ -1,0 +1,141 @@
+<div class="row">
+  <div class="ui two column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui placeholder segment">
+          <div class="ui icon header">
+            <i class="file pdf outline icon"></i>
+            Load Image Here
+          </div>
+          <input type="file" name="image" (change)="uploadImage($event)" accept="image/png, image/jpeg, image/gif, image/jpg" style="margin-left: 25%">
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui form" id="inputPost">
+          <div class="field">
+            <textarea placeholder="Post here..." rows="14" id="newPost"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" style="text-align: center">
+        <div class="ui button" id="cancel" (click)="clear()">Cancel</div>
+      </div>
+      <div class="column" style="text-align: center">
+        <div class="ui button" id="post" (click)="postNew()">Post</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="ui fluid action input">
+    <input type="text" placeholder="Search..." id="searchInput" [(ngModel)]="keyword">
+    <button id="searchBtn" class="ui icon button" (click)="updateKeyword(keyword)">
+      <i class="search icon"></i>
+    </button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="ui raised segment" id="posts">
+    <div *ngFor="let post of posts">
+      <div class="ui fluid card">
+        <div class="content">
+          <!--<div class="right floated meta">{{post.timestamp}}</div>-->
+          <img class="ui avatar image" src="{{post.avatar}}"><span id="articleAuthor">{{post.author}}</span>
+          <span class="meta" style="margin-left: 5px">{{post.date}}</span>
+          <button class="ui vertical animated right floated button" (click)="showModal(post.author, post._id)">
+            <div class="hidden content">Edit</div>
+            <div class="visible content"><i class="edit outline icon"></i></div>
+          </button>
+          <div class="ui small modal" id='modal{{post._id}}'>
+            <i class="close icon"></i>
+            <div class="header">
+              Edit article
+            </div>
+            <div class="content">
+              <div class="ui form">
+                <div class="field">
+                  <textarea id='newArticle'></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="ui approve button" id="update" (click)="updatePost(post._id)">
+                update
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui mini modal" id='warning'>
+          <div class="header">
+            Warning
+          </div>
+          <div class="content">
+            <p>You cannot edit!</p>
+          </div>
+          <div class="actions">
+            <div class="ui approve button" (click)="updatePost(post._id)">
+              OK
+            </div>
+          </div>
+      </div>
+        <div class="image">
+          <img src="{{post.img}}">
+        </div>
+        <div class="content allPosts">
+          {{post.text}}
+        </div>
+        <div class="extra content">
+          <div class="ui comments">
+            <!--<h3 class="ui dividing header">Comments</h3>-->
+            <div class="comment" *ngFor="let comment of post.comments">
+              <a class="avatar">
+                <img src={{comment.img}}>
+              </a>
+              <div class="content">
+                <a class="author">{{comment.name}}</a>
+                <div class="text">
+                  {{comment.text}}
+                </div>
+                <div class="actions">
+                  <a class="reply" (click)="showCommentModal(comment.name, comment._id)">Edit</a>
+                </div>
+                <div class="ui small modal" id='editComment{{comment._id}}'>
+                  <i class="close icon"></i>
+                  <div class="header">
+                    Edit Comment
+                  </div>
+                  <div class="content">
+                    <div class="ui form">
+                      <div class="field">
+                        <textarea id="newComment"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="ui approve button" id="updateComment" (click)="editComment(post._id, comment._id)">
+                      update
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="ui reply form">
+              <div class="field">
+                <textarea id="newReply{{post._id}}"></textarea>
+              </div>
+              <div class="ui blue labeled submit icon button">
+                <i class="icon edit" (click)="addReply(post._id,-1)"></i> Add Reply
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading Page</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Yichen Zhang">
+	
+	<style type="text/css">
+		input{
+			width: 200px;
+			height: 18px;
+		}
+		h1{
+			margin-left: 15px
+		}
+
+	</style>
+</head>
+
+<body>
+	<div align="center">
+		<h1>Create account</h1>
+		<form id="RegisterForm" method="GET" action="formProcessor.html" onsubmit=" return Mysubmit()">
+			<div style="margin-left: 120px">
+				<table border="0" style="border-collapse: separate; border-spacing: 20px">
+					<tr>
+						<td><i><font size="2">* required field</font></i></td>
+					</tr>
+					<tr>
+						<td>Account Name<span style="color: red"> *</span></td>
+
+						<td><input type="text" name="name" pattern="^[A-Za-z][A-Za-z0-9]*$" required="required"></td>
+						<td style="width: 120px"><font size="1" color="gray"><div style="line-height: 90%">(Only upper or lower case letters and numbers are allowed. Don't start with a number.)</div></font></td>
+					</tr>
+				
+					<tr>
+						<td>Display Name</td>
+						<td><input type="text" name="dname" placeholder="optional"></td>
+					</tr>
+
+					<tr>
+						<td>Email Address<span style="color: red"> *</span></td>
+						<td><input type="Email" name="email" required="required"></td>
+					</tr>
+
+					<tr>
+						<td>Phone Number<span style="color: red"> *</span></td>
+						<td><input type="tel" name="phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"></td>
+					</tr>
+
+					<tr>
+						<td>Birth Date<span style="color: red"> *</span></td>
+						<td><input type="date" name="birthday" id="birthday" required="required"></td>
+					</tr>
+
+					<tr>
+						<td>Zip Code<span style="color: red"> *</span></td>
+						<td><input type="text" name="zipcode" pattern="[1-9]{1}[0-9]{4}" required="required"></td>
+					</tr>
+
+					<tr>
+						<td>Password<span style="color: red"> *</span></td>
+						<td><input type="password" name="password" id="password" required="required"></td>
+					</tr>
+
+					<tr>
+						<td>Confirm Password<span style="color: red"> *</span></td>
+						<td><input type="password" name="confirmPassword" id="confirm" required="required"></td>
+					</tr>
+
+				</table>
+			</div>
+			<p><input type="hidden" name="timestamp" id="timestamp" value=""></p>
+			<br/>
+			<input type="submit" value="Submit" style="width: 125px">&nbsp;&nbsp;&nbsp;
+			<input type="reset" value=" Clear" style="width: 125px">
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function Mysubmit(){
+
+			var now = new Date();
+			var birth = new Date(document.getElementById("birthday").value);
+			var age = now.getFullYear() - birth.getFullYear();
+			var month = now.getMonth() - birth.getMonth();
+			var day = now.getDate() - birth.getDate();
+			if(month<0 || (month==0 && day<0)) age--;
+			if(age < 18){
+				alert("Only individuals 18 years of age or older are allowed to register.");
+				return false;
+			}
+			
+			if(document.getElementById("password").value != document.getElementById("confirm").value){
+				alert("The password and confirmation password do not match, please check your password and confimation password.");
+				return false;
+			}
+			document.getElementById("timestamp").value=Date.now();
+			return true;
+		}
+	</script>
+</body>
+</html>

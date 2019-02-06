@@ -1,0 +1,44 @@
+.wrapper{
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 0 auto;
+}
+.mainLink{
+  font-size: 20px;
+}
+#updateForm{
+  margin: 0 auto;
+}
+#contain{
+  width: 100%;
+  margin: 0 auto;
+}
+.header{
+  font-size: 25px;
+}
+ #initialDate{
+   height: 38px;
+   line-height: 38px;
+   padding-left: 25px;
+ }
+ #initialEmail{
+   height: 38px;
+   line-height: 38px;
+   padding-left: 25px;
+ }
+#initialName{
+  height: 38px;
+  line-height: 38px;
+  padding-left: 25px;
+}
+#initialTel{
+  height: 38px;
+  line-height: 38px;
+  padding-left: 25px;
+}
+#initialZip{
+  height: 38px;
+  line-height: 38px;
+  padding-left: 25px;
+}
+

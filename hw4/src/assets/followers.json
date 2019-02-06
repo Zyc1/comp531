@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Matt Giampietro",
+    "avatar": "../../images/matthew.png",
+    "headline": "Matthew is an interior designer living in New York"
+  },
+  {
+    "name": "Molly",
+    "avatar": "../../images/molly.png",
+    "headline": "Molly is a personal assistant living in Paris"
+  },
+  {
+    "name": "Elyse",
+    "avatar": "../../images/elyse.png",
+    "headline": "Elyse is a copywriter working in New York"
+  }
+]

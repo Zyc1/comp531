@@ -1,0 +1,112 @@
+<div class="wrapper">
+  <div class="ui two column grid" id="contain" style="width: 95%">
+    <div class="column" style="width: 40%">
+      <div class="row">
+        <div class="ui raised segment" style="text-align: center">
+          <div style="text-align: center">
+            <div class="column"><a [routerLink]="[ '/main' ]"><span class="mainLink">Main Page</span></a></div>
+            <br>
+            <div class="ui raised segment">
+              <img class="ui centered medium circular image" src="../../../images/kristy.png">
+            </div>
+            <br>
+            <input type="file" accept="image/png, image/jpeg, image/gif, image/jpg">
+          </div>
+        </div>
+      </div>
+      <div class="ui raised segment">
+        <div class="row">
+          <div class="ui segment">
+            <div class="header"><b>Current Info</b></div>
+            <div class="ui list" *ngFor="let pro of profile">
+              <div class="item">
+                <i class="user icon"></i>
+                <div class="content">
+                  Account Name
+                </div>
+                <div id="initialName">{{pro.name}}</div>
+              </div>
+              <div class="item">
+                <i class="mail icon"></i>
+                <div class="content">
+                  Email Address
+                </div>
+                <div id="initialEmail" style="height: 38px">{{pro.email}}</div>
+              </div>
+              <div class="item">
+                <i class="phone icon"></i>
+                <div class="content">
+                  Phone Number
+                </div>
+                <div id="initialTel" style="height: 38px">{{pro.tel}}</div>
+              </div>
+              <div class="item">
+                <i class="birthday cake icon"></i>
+                <div class="content">
+                  Birth Date
+                </div>
+                <div id="initialDate" style="height: 38px">{{pro.birthday}}</div>
+              </div>
+              <div class="item">
+                <i class="address card outline icon"></i>
+                <div class="content">
+                  Zip Code
+                </div>
+                <div id="initialZip" style="height: 38px">{{pro.zipcode}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column" style="width: 60%">
+      <div class="ui raised segment">
+        <div class="row">
+          <form class="ui form segment" (ngSubmit)="onSubmit()">
+            <div class="header"><b>Update Info</b></div>
+            <div id="updateForm">
+              <br>
+              <div class="eight wide field">
+                <label>Account Name</label>
+                <input id="accountName" placeholder="Account Name" name="accountName" type="text" pattern="^[A-Za-z][A-Za-z0-9]*$">
+                <div id="checkAccount" class="ui pointing red basic label" style="display: none">
+                  Please check your account name
+                </div>
+              </div>
+              <div class="eight wide field">
+                <label>Display Name</label>
+                <input name="displayName" type="text">
+              </div>
+              <div class="eight wide field">
+                <label>Email Address</label>
+                <input id="email" placeholder="Email" name="email" type="email">
+                <div id="checkEmail" class="ui pointing red basic label" style="display: none">
+                  Please check your email
+                </div>
+              </div>
+              <div class="eight wide field">
+                <label>Phone Number</label>
+                <input id="phone" placeholder="123-123-1234" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <div id="checkTel" class="ui pointing red basic label" style="display: none">
+                  Please check your phone number
+                </div>
+              </div>
+              <div class="eight wide field">
+                <label>Zip Code</label>
+                <input id="zipcode" type="text" name="zipcode" pattern="[1-9]{1}[0-9]{4}">
+                <div id="checkZip" class="ui pointing red basic label" style="display: none">
+                  Please check your zip code
+                </div>
+              </div>
+              <div class="eight wide field">
+                <label>Password</label>
+                <input id="password" name="password" type="password">
+              </div>
+              <button class="ui teal submit button">Update Info</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

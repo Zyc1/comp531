@@ -1,0 +1,21 @@
+body{
+	background-color: gray;
+}
+.container{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+table{
+	text-align: center;
+}
+td{
+	border: 1px solid white;
+}
+canvas{
+	background-image: url('https://fakeimg.pl/static/images/dark_wall.png');
+}
+

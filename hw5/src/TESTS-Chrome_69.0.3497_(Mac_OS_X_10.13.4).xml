@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 69.0.3497 (Mac OS X 10.13.4)" package="" timestamp="2018-10-19T01:59:27" id="0" hostname="yichens-mbp.dyndns.rice.edu" tests="26" errors="0" failures="0" time="3.503">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.053" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).AppComponent"/>
+  <testcase name="AppComponent should have as title 'hw5'" time="0.042" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).AppComponent"/>
+  <testcase name="AuthComponent should create" time="0.13" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).AuthComponent"/>
+  <testcase name="LoginComponent should create" time="0.102" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).LoginComponent"/>
+  <testcase name="LoginComponent login only registered users" time="0.068" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).LoginComponent"/>
+  <testcase name="LoginComponent should update success message" time="0.274" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).LoginComponent"/>
+  <testcase name="LoginComponent should not login an invalid user" time="0.198" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).LoginComponent"/>
+  <testcase name="LoginComponent should update error message" time="0.058" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).LoginComponent"/>
+  <testcase name="RegistrationComponent should create" time="0.216" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).RegistrationComponent"/>
+  <testcase name="RegistrationService should be created" time="0.012" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).RegistrationService"/>
+  <testcase name="FollowingComponent should create" time="0.121" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).FollowingComponent"/>
+  <testcase name="FollowingService should be created" time="0.008" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).FollowingService"/>
+  <testcase name="HeadlineComponent should create" time="0.141" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).HeadlineComponent"/>
+  <testcase name="HeadlineService should be created" time="0.007" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).HeadlineService"/>
+  <testcase name="MainComponent should create" time="0.537" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).MainComponent"/>
+  <testcase name="MainComponent should log out a user" time="0.313" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).MainComponent"/>
+  <testcase name="PostsComponent should create" time="0.187" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsComponent"/>
+  <testcase name="PostsComponent should fetch articles for current logged in user" time="0.172" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsComponent"/>
+  <testcase name="PostsComponent should update the search keyword" time="0.164" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsComponent"/>
+  <testcase name="PostsComponent should filter displayed articles by the search keyword" time="0.135" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsComponent"/>
+  <testcase name="PostsComponent should add articles when adding a follower" time="0.097" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsComponent"/>
+  <testcase name="PostsComponent should remove articles when remove a follower" time="0.12" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsComponent"/>
+  <testcase name="PostsService should be created" time="0.011" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).PostsService"/>
+  <testcase name="ProfileComponent should create" time="0.198" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).ProfileComponent"/>
+  <testcase name="ProfileComponent should fetch the login user profile information" time="0.117" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).ProfileComponent"/>
+  <testcase name="ProfileService should be created" time="0.022" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_4).ProfileService"/>
+  <system-out>
+  </system-out>
+  <system-err/>
+</testsuite>
